@@ -39,17 +39,12 @@
             <!-- Driver info will appear here after search -->
         </div>
     </div>
-
     <footer>
         <p>&copy; 2024 Bus Scheduling System. All Rights Reserved.</p>
     </footer>
 
     <script>
-        const drivers = [
-            { name: "John Doe", busNumber: "23", route: "City Center - Airport" },
-            { name: "Jane Smith", busNumber: "12", route: "Downtown - University" },
-            { name: "Tom Hardy", busNumber: "45", route: "Uptown - Central Park" }
-        ];
+        
 
         function adminLogin() {
             const username = document.getElementById('admin-username').value;
@@ -57,32 +52,27 @@
 
             // Simple login validation for admin
             if(username === "admin" && password === "admin123") {
-                window.location.href="../index.html"
+                window.location.href="../A-DBMS.html";
                 
             } else {
                 alert("Invalid admin credentials");
             }
         }
 
-        function searchDriver() {
-            const driverName = document.getElementById('driver-name').value.toLowerCase();
-            const driverInfoDiv = document.getElementById('driver-info');
-            driverInfoDiv.innerHTML = ''; // Clear previous results
-
-        //     const driver = drivers.find(d => d.name.toLowerCase() === driverName);
-
-        //     if(driver) {
-        //         driverInfoDiv.innerHTML = `
-        //             <div class="driver-box">
-        //                 <h3>${driver.name}</h3>
-        //                 <p>Bus Number: ${driver.busNumber}</p>
-        //                 <p>Route: ${driver.route}</p>
-        //             </div>
-        //         `;
-        //     } else {
-        //         driverInfoDiv.innerHTML = `<p>Driver not found!</p>`;
-        //     }
-        // }
+      
     </script>
+//     function validateLogin() {
+//     var username = document.getElementById("username").value;
+//     var password = document.getElementById("password").value;
+//     var errorMessage = document.getElementById("error-message");
+
+//     // Add your authentication logic here
+//     if (username === "12345" && password === "54321") {
+//         window.location.href="index.html";
+
+//     } else {
+//         errorMessage.innerHTML = "Invalid username or password";
+//     }
+// }
 </body>
 </html>
