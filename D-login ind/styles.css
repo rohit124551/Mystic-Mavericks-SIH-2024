@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url('/assets/login.jpg');
+  background-image: url('./assets/login.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
